@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://c61tcdkoa66yc"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_vglwm"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+
+[node name="planets" type="Node3D" parent="."]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="planets"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="planets/StaticBody3D"]
+shape = SubResource("SphereShape3D_vglwm")
